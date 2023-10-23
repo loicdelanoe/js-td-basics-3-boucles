@@ -27,8 +27,16 @@ Ecrivez un programme qui affiche tous les nombres entre 1 et 100 avec les except
 // }
 
 
-for (let i = 0; i <= 100; console.log(i % 15 === 0 ? 'FizzBuzz' : i % 3 === 0 ? 'Fizz' : i % 5 === 0 ? 'Buzz' : i ), i++) {
-}
+// for (let i = 100; i >= 0; console.log(i % 15 === 0 ? 'FizzBuzz' : i % 3 === 0 ? 'Fizz' : i % 5 === 0 ? 'Buzz' : i ), i--) {
+// }
 
 
+// while (age < 0 || isNaN(age)) {
+//     age = Number(prompt("Entrez un nombre"));
+// }
+let age;
 
+do {
+    age = parseInt(prompt("Entrez un nombre"));
+
+} while (age < 1 || isNaN(age))
