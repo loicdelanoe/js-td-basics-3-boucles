@@ -25,3 +25,11 @@
     - que se passe-t-il si vous avez déclaré i avec let ?
     - que se passe-t-il si vous déclarez i avec var ?
 */
+
+const table = Number(prompt("Entrez la table de multiplication que vous voulez :"));
+
+console.log(`Voici les 10 premières valeurs de la table de multiplication par ${table}`);
+for (let i = 0; i <= 10 ; i++) {
+    let result = i * table;
+    console.log(`${i} x ${table} = ${result}`);
+}
