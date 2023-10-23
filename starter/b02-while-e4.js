@@ -19,4 +19,13 @@ Pour chaque itération, assurez-vous de vous arrêter après avoir affiché les 
 // 3. Utilisez un titre approprié pour informer l'utilisateur de ce qui est affiché, par exemple : "Voici les 10 premières valeurs de la table de multiplication par 7."
 */
 
+const table = Number(prompt("Entrez la table de multiplication que vous voulez :"));
 
+console.log(`Voici les 10 premières valeurs de la table de multiplication par ${table}`);
+
+let i = 0;
+while (i <= 10) {
+    let result = i * table;
+    console.log(`${i} x ${table} = ${result}`);
+    i++;
+}
