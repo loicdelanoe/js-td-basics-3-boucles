@@ -22,3 +22,16 @@
   - Écrivez l'expression à afficher dans le console.log d'une manière alternative,
     en utilisant le concept de template littéral.
 */
+
+const line = 5;
+const column = 5;
+
+for (let i = 0; i <= line; i++) {
+
+    for (let j = 0; j <= column; j++) {
+        const result = i * j;
+        console.log(`| ${i} | ${j} | ${result} |`);
+    }
+
+}
+
